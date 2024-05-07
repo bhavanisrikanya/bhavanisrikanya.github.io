@@ -1,0 +1,151 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavani Srikanya curriculum vitae</title>
+    <style>
+        /* Style for collapsible sections */
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            position: relative;
+        }
+
+        .collapsible::after {
+            content: '\25B6'; /* Unicode character for right-pointing arrow */
+            position: absolute;
+            right: 10px;
+            transition: transform 0.3s;
+        }
+
+        .active::after {
+            transform: rotate(90deg);
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+
+        /* Style for profile image */
+        #profile-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Curriculum vitae
+</h1>
+
+<img src="download.jpg" alt="Profile Image" id="profile-image">
+<h2>Bhavani srikanya</h2>
+
+<button class="collapsible">Career objective</button>
+<div class="content">
+  <p>Seeking to enhance myself from student level to professional level and prove myself worthy in the uplift of the organization & my Skills.</p>
+</div>
+
+<button class="collapsible">Education</button>
+<div class="content">
+  <p><div>
+    <h2>Masters [pursuing]</h2>
+    <p>SRM University AP</p>
+    <p>Stream: Molecular biology and Biotechnology</p>
+</div>
+
+<div>
+    <h2>Bachelors of Science [2020 - 2023]</h2>
+    <p>Andhra Loyola College, Vijayawada. </p>
+    <p>Stream: Biotechnology, Microbiology and Chemistry</p>
+    <p>Aggregate: 7.69 cgpa</p>
+</div>
+
+<div>
+    <h2>Intermediate [2018-2020]</h2>
+    <p>Prathibha Junior College, Macherla</p>
+    <p>Stream: BIPC</p>
+    <p>Aggregate: 7.7 cgpa</p>
+</div>
+
+<div>
+    <h2>Board of Secondary Education</h2>
+    <p>ZPHS, Macherla.</p>
+    <p>Board: Andhra Pradesh state Board of Secondary Education</p>
+    <p>Aggregate:  7.7 cgpa</p>
+</div>
+</p>
+</div>
+
+<button class="collapsible">Technical skills</button>
+<div class="content">
+  <p>homology modeling</p>
+  <p>molecular docking</p>
+  <p>MS Office</p>
+  <p>Git hub</p>
+</div>
+
+<button class="collapsible">Projects</button>
+<div class="content">
+  <p>Community Service Project. 
+</p>
+  <p>6 months internship in healthcare sector</p>
+</div>
+
+<button class="collapsible">Certifications</button>
+<div class="content">
+  <p>Certificate in Biological clock in poster presentation, Cavaxion certificates on 3 days workshop in clinical trails.</p>
+</div>
+
+<button class="collapsible">Hobbies</button>
+<div class="content">
+  <p>Playingshuttle</p>
+  <p>Drawing</p>
+</div>
+
+<button class="collapsible">Contact Information</button>
+<div class="content">
+  <p>Address: Kukatpally, Hyderabad.</p>
+  <p>G-mail address:srikanya06@gmail.com</p>
+</div>
+
+<script>
+    // JavaScript to toggle collapsible sections
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            } 
+        });
+    }
+</script>
+
+</body>
+</html>
